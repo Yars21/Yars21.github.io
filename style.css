@@ -53,7 +53,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--hover-color);
 }
 
 .logo {
@@ -65,7 +65,7 @@ header {
 header.sticky {
   background: var(--bg-color);
   border-bottom: 1px solid var(--secon-bg-color);
-  padding: 12px;
+  padding: 12px 35px;
 }
 
 span {
@@ -78,7 +78,7 @@ span {
 
 .navlist a {
   color: var(--text-color);
-  font-weight: 500;
+  font-weight: 800;
   padding: 10px 20px;
 }
 
@@ -164,16 +164,18 @@ section {
 }
 
 /* now for the paragraph */
-.home-content p {
+.home-content h1 {
   color: #bdbdbd;
   line-height: 1.6;
+  font-size: 20px;
+  margin: 20px auto;
 }
 
 .info-box {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  width: 480px;
   margin: 1rem 0 2rem;
 }
 
@@ -246,11 +248,12 @@ section {
 
 /* social media icons */
 .social-icons {
-  margin-top: 8rem;
   display: flex;
   justify-content: space-between;
-  width: 220px;
+  width: 600px;
   height: 40px;
+
+  margin: -65px auto 20px auto;
 }
 
 .social-icons a {
@@ -268,6 +271,7 @@ section {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  margin: 0px 30px;
 }
 
 .social-icons a i {
@@ -359,10 +363,15 @@ section {
   margin-bottom: 0.2rem;
 }
 
-.about-content p {
+.about-content h2 {
   color: #fdfdfd;
   font-weight: 300;
   margin-bottom: 1.5rem;
+  font-size: 18px;
+  text-align: justify;
+}
+.about-content span {
+  color: #12f7ff;
 }
 
 .info-about1,
@@ -474,12 +483,16 @@ section {
   background: var(--bg-color);
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 3rem;
   border-radius: 50%;
   position: relative;
   color: var(--hover-color);
   box-shadow: var(--neon-box-shadow);
   outline: 3px solid var(--bg-color);
+  margin: auto;
+  width: 100px;
+  height: 100px;
 }
 
 .service-box h3 {
@@ -691,6 +704,7 @@ section {
 }
 
 .port-box {
+  height: 280px;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -749,8 +763,10 @@ section {
 }
 
 .port-content p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 5px 0 15px 0;
+  color: black;
+  font-weight: 600;
 }
 
 .port-content a {
