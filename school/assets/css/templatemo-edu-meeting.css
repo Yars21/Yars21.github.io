@@ -170,8 +170,10 @@ h6 {
   margin-bottom: 0px;
 }
 
-ul {
+.classes {
   margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -230,6 +232,18 @@ body {
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.new {
+  font-size: 13px;
+  color: #fff;
+  background-color: #a12c2f;
+  padding: 5px 20px;
+  display: inline-block;
+  border-radius: 10px;
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.3s;
@@ -353,6 +367,9 @@ header
 .header-area .main-nav {
   min-height: 80px;
   background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-area .main-nav .logo {
@@ -1843,7 +1860,7 @@ responsive
   }
 
   section.upcoming-meetings {
-    padding-top: 400px;
+    padding-top: 360px;
   }
 
   section.upcoming-meetings .categories {
