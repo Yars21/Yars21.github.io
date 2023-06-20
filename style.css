@@ -312,8 +312,7 @@ section {
   max-width: 350px;
   height: auto;
   border: 1px solid var(--hover-color);
-  border-left: var(--bg-color);
-  border-bottom: var(--bg-color);
+  border-color: var(--secon-bg-color);
 }
 
 .liquid-shape {
