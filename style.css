@@ -340,6 +340,7 @@ section {
 .about .img-about img {
   max-width: 400px;
   height: auto;
+  border-radius: 30px;
 }
 
 .about-content span {
@@ -392,7 +393,7 @@ section {
 }
 
 .info-about1 {
-  left: 10%;
+  left: 2%;
   top: 34%;
 }
 
