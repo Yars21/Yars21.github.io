@@ -237,18 +237,6 @@ body {
   transition: all 0.3s;
 }
 
-.new {
-  font-size: 13px;
-  color: #fff;
-  background-color: #a12c2f;
-  padding: 5px 20px;
-  display: inline-block;
-  border-radius: 10px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: all 0.3s;
-}
-
 .main-button-red a:hover {
   opacity: 0.9;
 }
@@ -364,12 +352,18 @@ header
   transition: all 0.5s ease 0s;
 }
 
-.header-area .main-nav {
+.header-area .nav {
   min-height: 80px;
   background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.bod {
+  background-color: #12121291;
+  height: 100vh;
+  padding: 20px;
 }
 
 .header-area .main-nav .logo {
