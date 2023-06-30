@@ -76,6 +76,7 @@
               class="btn"
               id="btn"
               onclick="mine()" />
+            <button onclick="register()">Register</button>
           </div>
         </form>
       </div>
@@ -92,17 +93,16 @@
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
 
-    <script>
-      function mine() {
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-        if (email == "ykebed40@gmail.com" && password == 1234) {
-          window.location.assign("./classes-details.html");
-        } else {
-          alert("Wrong Credentials");
-        }
-      }
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     </script>
+    <script src="index.js"></script>
   </body>
 </html>
