@@ -21,6 +21,7 @@ function register() {
   // Get all the input fields
 
   email = document.getElementById("email").value;
+  console.log(email);
   password = document.getElementById("password").value;
   // fullName = document.getElementById("fullName").value;
   // course = document.getElementById("course").value;
@@ -32,7 +33,6 @@ function register() {
       "Your Email and Password is outline. use more than 6 charactors for passsword"
     );
     return;
-  } else {
   }
 
   if (
