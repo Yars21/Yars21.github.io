@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="bod">
+  <body>
+    <img
+      class="logbackground"
+      src="assets/images/meetings-page-bg.jpg"
+      alt="" />
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
       <div class="container">
@@ -21,24 +26,30 @@
           <div class="col-12">
             <nav class="main-nav">
               <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo"> MIT </a>
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo-no-background.png" alt="" />
+              </a>
               <!-- ***** Logo End ***** -->
+
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="classes.html" class="active">Classes</a></li>
-                <li><a href="registration.html">Apply Now</a></li>
-                <li class="has-sub">
-                  <a href="javascript:void(0)">Current</a>
-                  <ul class="sub-menu">
-                    <li><a href="classes.html">Upcoming Classes</a></li>
-                    <li><a href="login.html">classes Details</a></li>
-                    <li><a href="excercises.html">Excercises</a></li>
-                  </ul>
+                <li class="scroll-to-section">
+                  <a href="#top">Home</a>
                 </li>
-                <li><a href="index.html#courses">Courses</a></li>
-                <li><a href="index.html#contact">Contact Us</a></li>
+
+                <li><a href="registration.html">Apply Now</a></li>
+
+                <li class="scroll-to-section">
+                  <a href="#courses">Courses</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#contact">Contact Us</a>
+                </li>
+                <li class="myButton">
+                  <a href="login.html" class="active">Sign In</a>
+                </li>
               </ul>
+
               <a class="menu-trigger">
                 <span>Menu</span>
               </a>
@@ -49,7 +60,29 @@
       </div>
     </header>
     <!-- ***** Header Area End ***** -->
-    <h1>loging in</h1>
+    <div class="logcontainer">
+      <div class="logbox">
+        <h2>Login</h2>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" autocomplete="email" />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="new-password" />
+          <div>
+            <input
+              type="submit"
+              value="Log In"
+              class="btn"
+              id="btn"
+              onclick="mine()" />
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -61,5 +94,18 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+      function mine() {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        if (email == "ykebed40@gmail.com" && password == 1234) {
+          window.location.assign("./classes-details.html");
+        } else {
+          alert("Wrong Credentials");
+        }
+      }
+    </script>
   </body>
 </html>

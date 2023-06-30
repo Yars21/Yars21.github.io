@@ -241,6 +241,16 @@ body {
   opacity: 0.9;
 }
 
+.myButton {
+  background-color: #a12c2f;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.myButton a {
+  padding: 0px 15px;
+}
+
 .main-button-yellow a {
   font-size: 13px;
   color: #fff;
@@ -358,12 +368,6 @@ header
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.bod {
-  background-color: #12121291;
-  height: 100vh;
-  padding: 20px;
 }
 
 .header-area .main-nav .logo {
@@ -751,6 +755,8 @@ header
 @media (min-width: 767px) {
   .header-area .main-nav .nav {
     display: flex !important;
+    justify-content: center;
+    align-items: baseline;
   }
 }
 
