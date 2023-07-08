@@ -345,8 +345,10 @@ section {
 
 .about-content span {
   color: #fdfdfd;
-  font-size: 0.8rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: math;
+
   letter-spacing: 2px;
   text-transform: uppercase;
 }
