@@ -38,7 +38,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: math, "Poppins", sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
 }
@@ -254,6 +254,7 @@ section {
   width: 90%;
   height: 40px;
   margin: -65px 5% 20px 5%;
+  padding: 0px 150px;
 }
 
 .social-icons a {
@@ -473,6 +474,7 @@ section {
   border-radius: 10px;
 }
 
+
 .service-btn {
   width: auto;
   justify-content: center;
@@ -538,6 +540,7 @@ section {
   margin-bottom: 2rem;
   font-size: var(--norma-font);
   text-align: center;
+  color: #12f7ff;
 }
 
 .skill-left .skill-bar .info {
@@ -572,19 +575,25 @@ section {
 }
 
 .skill-bar .bar .css {
-  width: 80%;
+  width: 90%;
   animation: css 2s;
 }
 
 .skill-bar .bar .javascript {
-  width: 75%;
+  width: 95%;
   animation: javascript 2s;
 }
 
 .skill-bar .bar .react {
   animation: react 2s;
-  width: 80%;
+  width: 85%;
 }
+
+.skill-bar .info p{
+  font-size: 17px;
+  font-weight: 700;
+}
+
 
 @keyframes html {
   0% {
@@ -841,6 +850,63 @@ textarea {
   font-size: 1rem;
 }
 
+
+/* Gallery section Css */
+
+.background {
+    background-color: var(--background);
+    display: grid;
+    place-items: center;
+    height: 60vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 800px;
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    width: 135px;
+    border-radius: 16px;
+    height: 360px;
+    overflow: hidden;
+    background-color: var(--background);
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0.25;
+}
+
+.card img {
+    height: 390px;
+    width: 100%;
+}
+
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#gallery{
+  display: flex;
+  gap: 40px;
+}
+
+#gallery h1{
+  text-align: center;
+  color: #12f7ff;
+  margin-bottom: 20px;
+}
+
+#gallery br{
+  color: #12f7ff;
+  height: 2px;
+}
+
 /* footer css  */
 footer {
   padding: 1.5rem 10%;
@@ -897,6 +963,8 @@ footer a i {
   header.sticky {
     padding: 15px 5%;
   }
+
+
   footer {
     padding: 15px 5%;
   }
@@ -906,6 +974,15 @@ footer a i {
   .navlist a {
     padding: 8px 15px;
   }
+
+ .social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    margin: -65px 0px 20px 0px;
+    padding: 0px 150px;
+}
 
   :root {
     --big-font: 2.5rem;
@@ -918,6 +995,7 @@ footer a i {
   }
   .social-icons {
     margin-top: 2rem;
+    padding: 0px 40px;
   }
 }
 
@@ -925,6 +1003,13 @@ footer a i {
   #menu-icon {
     display: block;
     transition: all 0.4s ease;
+  }
+
+  #gallery{
+    display: block;
+  }
+  .background{
+    margin-bottom: 50px;
   }
 
   #menu-icon.bx-x {
@@ -1006,6 +1091,7 @@ footer a i {
 
 .wait {
   height: 150px;
+  margin-top: 20px;
 }
 
 .conta {
@@ -1107,3 +1193,5 @@ footer a i {
   letter-spacing: 0.15em;
   font-style: italic;
 }
+
+
